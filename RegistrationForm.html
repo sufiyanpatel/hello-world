@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<title>Registration Form</title>
+<center>Registration Form</center>
+<br>
+<div align="Center">
+</head>
+<body>
+	<div align="center">
+	<form action="registerServlet" method="post">
+	<input type="hidden" name="action" value="RegistrationForm">
+		<table border="5" bordercolor="cyan" bgcolor="watermelon" style="width:40%">
+	 <tr><td>First Name:</td><td><input type="text" name="firsName"></td></tr>
+	 
+	 <tr><td>Last Name:</td><td><input type="text" name="lastName"></td></tr>
+	 
+	 <tr><td>User Name:</td><td><input type="text" name="userName"></td></tr>
+	 
+	 <tr><td>Password:</td><td><input type="password" name="password"></td></tr>
+	 
+	 <tr><td>Address:</td><td><textarea rows="5" cols="20" name="address"></textarea></td></tr>
+	 
+	 <tr><td>Courses:<br></td><td><input type="checkbox" name="PIP" value="PIP">PIP<br>
+	 						<input type="checkbox" name="PJD" value="PJD">PJD<br>	 
+	 						<input type="checkbox" name="PJS" value="PJS">PJS<br>
+	 						<input type="checkbox" name="PJE" value="PJE">PJE<br>
+	 </td></tr>
+	 
+	 <tr><td>Gender:<br></td><td><input type="radio" name="sex" value="male" checked>Male<br>
+	 							 <input type="radio" name="sex" value="female" checked>Female<br>
+	 </td></tr>
+
+	<tr><td>Area:</td>
+	<td>
+	<select name="area">
+		<option value="airoli">Airoli</option>
+		<option value="Thane">Thane</option>
+		<option value="Ghansoli">Ghansoli</option>
+		<option value="Vashi">Vashi</option>
+		<option value="Andheri">Andheri</option>
+	</select></td></tr>
+	
+	<tr><td>Upload Your Resume Here:</td><td><input type="file" name="resume" accept="image/*"/></td></tr>
+		
+	 </table>		
+	 
+	</form>
+	<button type="button" onclick="">Submit Form!</button>
+	<p class="text-success">Congrats You successfully fill that form</p>
+	</div>
+</body>
+</html>
